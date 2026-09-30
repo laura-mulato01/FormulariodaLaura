@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente \ Mercado Livre</title>
+
+</head>
+<body>
+    <header class="cabeçalho">
+        <div><span class="marca">Cadastro Mercado Livre</span>
+
+        </div>
+        <main>
+            <h1>Crie seu Cadatro</h1>
+            <p class="introducao">Preencha cada etapa. Os campos com * são obrigatórios</p>
+        <form id=" formulario-cadastro">
+             <fieldset>
+                <legend>1. Dados Pessoais</legend>
+                <div class="campo">
+                    <label for="nome">NOME COMPLETO*</label>
+                    <input class="controle" type="text" id="name" name="nome" placeholder="Ex. Ana Julia" autocomplete="name" minlength="3" maxlength="100" required>
+                </div>
+
+                    <div class="campo">
+                    <label for="email"> EMAIL COMPLETO*</label>
+                    <input class= "controle" type="email" id="email" name="email" placeholder="Ex. ana.ju@gm..." autocomplete="email" required>
+                </div>
+
+
+                   <div class="campo">
+                            <label for="senha"> SENHA TESTE*</label>
+                            <input class= "controle" type ="password" id="senha" name="senha" placeholder="Crie sua senha" autocomplete="new-password" required aria-describedby= "senha-ajuda">
+                           <small class="ajuda" id="senha-ajuda">Digite pelo menos 8 carcteres </small>
+                    </div>
+                          <button type="button" onclick="mostrarSenha()">👀 Mostrar senha</button>
+
+
+                    <div class="campo">
+                    <label for="email"> TELEFONE*</label>
+                    <input class= "controle" type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" autocomplete="tel" required>
+                </div>
+
+
+                    <div class="campo">
+                    <label for="email"> NASCIMENTO*</label>
+                    <input class= "controle" type="date" id="nascimento" name="nascimento" placeholder="00/00/0000" autocomplete="bday" required>
+                </div>
+             </fieldset>
+
+             <fieldset>
+                <legend>2.Endereço Pessoal</legend>
+                <div class="campo">
+                    <label for="cep">Digite seu CEP*</label>
+                    <input class="controle" type="text" id="cep" name="cep" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{8}" maxlength="8">
+                </div>
+
+                <div class="campo">
+                    <label for="rua">Rua ou Avenida*</label>
+                    <input class="controle" type="text" id="rua" name="rua" autocomplete="street-address" placeholder="Av.Santos Dumont..." >
+                </div>
+
+                <div class="campo">
+                    <label for="numero">Numero ou SN*</label>
+                    <input class="controle" type="text" id="numero" name="numero" placeholder="Ex. 1234 ou S/n" required >
+                </div>
+
+                    <div class="campo">
+                    <label for="numero">COMPLEMENTO*</label>
+                    <input class="controle" type="text" id="complemento" name="complemento" placeholder="Ex. Bloco L apartamento 13" autocomplete="address-level2" >
+                </div>
+
+                <div class="campo">
+                    <label for="numero">BAIRRO*</label>
+                    <input class="controle" type="text" id="bairro" name="bairro" placeholder="Ex. Bairro das Margaridas" required >
+                </div>
+
+                <div class="campo">
+                    <label for="numero">CIDADE*</label>
+                    <input class="controle" type="text" id="cidade" name="cidade" placeholder="Ex. Votorantim" autocomplete="address-level2" required >
+                </div>
+
+                 <div class="campo">
+                    <label for="numero">ESTADO*</label>
+                    <select class="controle" type="text" id="estado" name="estado" placeholder="Ex. São Paulo" autocomplete="address-level1" required >
+                    <option value="SP">São Paulo</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapa</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceara</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="AC">Acre</option>
+                    </select>
+                </div>
+
+                
+                 <div class="campo">
+                    <label for="numero">PAIS*</label>
+                    <input class="controle" type="text" id="pais" name="pais" placeholder="Ex. Brasil" autocomplete="country-name" required >
+                </div>
+             </fieldset>
+             
+             <fieldset>
+               <legend>3. Como Prefere Receber o Contato?</legend>
+               <label class="opcao" for="contato-email">
+               <input type="radio" id="contato-email" name="contato" value="email">Email</label>
+               <label class="opcao" for="contato-telefone">
+               <input type="radio" id="contato-telefone" name="contato" value="telefone">Telefone</label>
+             </fieldset>
+
+             <fieldset>
+                <legend>4. Ofertas do seu interesse</legend>
+                <label class="opcao" for="tecnologia">
+                <input type="checkbox" id="tecnologia" name="interesse" value="tecnologia">Tecnologia</label>
+
+                <label class="opcao" for="moda">
+                <input type="checkbox" id="moda" name="interesse" value="moda">Moda</label>
+
+                <label class="opcao" for="esportes">
+                <input type="checkbox" id="esportes" name="interesse" value="esportes">Esportes</label>
+
+                <label class="opcao" for="decoracao">
+                <input type="checkbox" id="decoracao" name="interesse" value="decoracao">Decoracao</label>
+
+                <label class="opcao" for="cozinha">
+                <input type="checkbox" id="cozinha" name="interesse" value="cozinha">Cozinha</label>
+
+                <label class="opcao" for="brinquedos">
+                <input type="checkbox" id="brinquedos" name="interesse" value="brinquedos">Brinquedos</label>
+
+                <label class="opcao" for="livros">
+                <input type="checkbox" id="livros" name="interesse" value="livros">Livros</label>
+             </fieldset>
+
+             <fieldset>
+                <legend>5. Deixe sua Mensagem</legend>
+                    <div class="campo">
+                     <label for="assunto">Assunto</label>
+                     <select class="controle" id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="sugestao">Sugestão</option>
+                     </select>
+                    </div>
+
+                    <div class="campo">
+                     <label for="mensagem">Mensagem</label>
+                     <textarea class="controle" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua Mensagem aqui..."></textarea>
+                     </div>
+             </fieldset>
+
+             <details >
+                  <summary>6. Explorando outros Campos do HTML</summary>
+             <fieldset>
+                <legend>6. Campos Opcionais</legend>
+                     <div class="campo">
+                          <label for="produto"> Qual produto você não encontrou? </label>
+                          <input class="controle" type="text" id="produto" name="produto" list="produtos">
+                          <datalist id="produtos">
+                            <option value="Celular"> 
+                            <option value="Notebook"> 
+                            <option value="Smart TV">
+                            <option value="Fone de Ouvido">
+                    </datalist>
+                      <small class="ajuda">A lista oferece segestões... mas você pode escrever o que quiser!</small>
+                     </div>
+
+                <div class="campo">
+                    <label for="quantidade">Quantidade desejada</label>
+                    <input class="controle" type="number" id="quantidade" name="quantidade" list="quantidade">
+                    <small class="ajuda">A lista vai de 1 a 10</small>
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Defina o horário de atendimento</label>
+                    <input class="controle" type="time" id="horario" name="horario" list="horario">
+                </div>
+             </fieldset>
+             </details>
+        <div class="acoes">
+            <button class="principal" type="submit">Testar Preenchimento</button>
+        </div>
+        <script>
+    function mostrarSenha() {
+        const senha = document.getElementById("senha");
+
+        senha.type = "text";
+
+        setTimeout(function () {
+            senha.type = "password";
+        }, 3000);
+    }
+</script>
+  
+        </form>    
+        </main>
+    </header>
+</html>

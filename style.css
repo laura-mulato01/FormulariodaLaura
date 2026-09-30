@@ -1,0 +1,260 @@
+
+    /* =========================================================
+       1. CONFIGURAÇÕES GERAIS
+    ========================================================== */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #fff159;
+        color: #333;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+
+    /* =========================================================
+       2. CABEÇALHO
+    ========================================================== */
+
+    .cabecalho {
+        background: #fff159;
+        padding: 22px;
+    }
+
+    .cabecalho div {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .marca {
+        font-size: 23px;
+        font-weight: bold;
+        color: #243665;
+    }
+
+    .cabecalho p {
+        margin: 2px 0 0;
+    }
+
+
+    /* =========================================================
+       3. ÁREA CENTRAL
+    ========================================================== */
+
+    main {
+        max-width: 850px;
+        margin: 32px auto;
+        padding: 0 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .introducao {
+        color: #555;
+    }
+
+    form {
+        background: white;
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #00000012;
+    }
+
+
+    /* =========================================================
+       4. GRUPOS E CAMPOS DO FORMULÁRIO
+    ========================================================== */
+
+    fieldset {
+        min-width: 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 0 0 26px;
+        padding: 20px;
+    }
+
+    legend {
+        padding: 0 8px;
+        color: #244e91;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    .campo {
+        margin-bottom: 18px;
+    }
+
+    .campo:last-child {
+        margin-bottom: 0;
+    }
+
+    .campo label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .controle {
+        width: 100%;
+        padding: 11px;
+        font: inherit;
+        color: #333;
+        background: white;
+        border: 1px solid #888;
+        border-radius: 6px;
+    }
+
+    textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .ajuda {
+        display: block;
+        font-size: 13px;
+        color: #595959;
+        margin-top: 5px;
+    }
+
+
+    /* =========================================================
+       5. OPÇÕES DE RADIO E CHECKBOX
+
+       Não aplicar width: 100% nos radios e checkboxes.
+    ========================================================== */
+
+    .opcao {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        margin: 12px 0;
+        cursor: pointer;
+    }
+
+    .opcao input {
+        margin-top: 5px;
+        accent-color: #2968c8;
+    }
+
+
+    /* =========================================================
+       6. DESTAQUE AO NAVEGAR COM O TECLADO
+    ========================================================== */
+
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    a:focus-visible {
+        outline: 3px solid #2968c8;
+        outline-offset: 3px;
+    }
+
+
+    /* =========================================================
+       7. BOTÕES DO FORMULÁRIO
+    ========================================================== */
+
+    .acoes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    button {
+        padding: 13px 20px;
+        border: 0;
+        border-radius: 6px;
+        font: inherit;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .principal {
+        background: #2968c8;
+        color: white;
+    }
+
+    .principal:hover {
+        background: #1c4e9c;
+    }
+
+    .secundario {
+        background: #e8eef8;
+        color: #234d90;
+    }
+
+    .secundario:hover {
+        background: #d7e3f7;
+    }
+
+
+    /* =========================================================
+       8. MENSAGEM DE RESULTADO
+    ========================================================== */
+
+    #resultado {
+        color: #205a32;
+        font-weight: bold;
+    }
+
+
+    /* =========================================================
+       9. ÁREA DE CAMPOS OPCIONAIS
+    ========================================================== */
+
+    details {
+        margin: 20px 0;
+    }
+
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+
+    /* =========================================================
+       10. RODAPÉ
+    ========================================================== */
+
+    footer {
+        text-align: center;
+        padding: 22px;
+        color: #555;
+    }
+
+
+    /* =========================================================
+       11. ADAPTAÇÃO PARA TELAS PEQUENAS
+    ========================================================== */
+
+    @media (max-width: 600px) {
+
+        form {
+            padding: 16px;
+        }
+
+        fieldset {
+            padding: 14px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .acoes button {
+            width: 100%;
+        }
+
+    }
